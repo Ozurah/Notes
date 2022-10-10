@@ -1,0 +1,106 @@
+{
+	"folders": [
+		{
+			"name": "Devoirs",
+			"path": "./Devoirs"
+		},
+		{
+			"name": "Lundi",
+			"path": "NA-Lundi"
+		},
+		{
+			"name": "Traitement d'images",
+			"path": "Traitement images"
+		},
+		{
+			"name": "Mardi",
+			"path": "NA-Mardi"
+		},
+		{
+			"name": "Programmation fonctionnelle (Java)",
+			"path": "./Prog Fonctionnelle"
+		},
+		{
+			"name": "Spring",
+			"path": "./Spring"
+		},
+		{
+			"name": "Intelligence Articielle 1",
+			"path": "./IA 1"
+		},
+		{
+			"name": "Mercredi",
+			"path": "NA-Mercredi"
+		},
+		{
+			"name": "Qualité logiciel",
+			"path": "Qualité Logiciel"
+		},
+		{
+			"name": "Cryptographie",
+			"path": "./Crypto"
+		},
+		{
+			"name": "Développement Web 1",
+			"path": "./DevWeb"
+		},
+		{
+			"name": "Workshop Laravel
+			"path": "workshop-laravel"
+		},
+		{
+			"name": "Jeudi",
+			"path": "NA-Jeudi"
+		},
+		{
+			"name": "Compilateur",
+			"path": "./Compilateur"
+		},
+		{
+			"name": "Dév. Mobile",
+			"path": "Mobile"
+		},
+		{
+			"name": "Paradigme programmation avancée",
+			"path": "Paradigme Prog"
+		},
+		{
+			"name": "Vendredi",
+			"path": "NA-Vendredi"
+		},
+		{
+			"name": "Entreprises et Innovations",
+			"path": "Entreprises Innovations"
+		},
+		{
+			"name": "Communication et gestion d'équipe",
+			"path": "Communication et gestion d'équipe"
+		},
+		{
+			"name": "Infographie",
+			"path": "Infographie"
+		},
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.activeBackground": "#296438",
+			"activityBar.background": "#296438",
+			"activityBar.foreground": "#e7e7e7",
+			"activityBar.inactiveForeground": "#e7e7e799",
+			"activityBarBadge.background": "#261c44",
+			"activityBarBadge.foreground": "#e7e7e7",
+			"commandCenter.border": "#e7e7e799",
+			"sash.hoverBorder": "#296438",
+			"statusBar.background": "#1a4024",
+			"statusBar.foreground": "#e7e7e7",
+			"statusBarItem.hoverBackground": "#296438",
+			"statusBarItem.remoteBackground": "#1a4024",
+			"statusBarItem.remoteForeground": "#e7e7e7",
+			"titleBar.activeBackground": "#1a4024",
+			"titleBar.activeForeground": "#e7e7e7",
+			"titleBar.inactiveBackground": "#1a402499",
+			"titleBar.inactiveForeground": "#e7e7e799"
+		},
+		"peacock.color": "1a4024"
+	}
+}
