@@ -83,6 +83,58 @@ Information Technology Infrastructure Library
 
 ![](Screen/2022-10-05-09-28-18.png)
 
+## Stratégie de service 
+Gestion des relations commerciales
+Gestion de la stratégie pour l'informatique
+Gestion de portefeuille de services
+Gestion de la demande
+Gestion financière des services informatiques
+
+## Service de design
+Gestion du catalogue de services
+Gestion des risques
+Gestion de la conformité
+Gestion des niveaux de service
+Coordination de la conception
+Gestionnaire des fournisseurs
+Gestion de la capacité
+Gestion de la disponibilité
+Gestion de la continuité des services informatiques
+Gestion de la sécurité des informations
+Gestion des architectures
+
+## Transition des services
+
+Gestion du changement
+Gestion de projet (trans. planification et support)
+Évaluation du changement
+Gestion des versions et du déploiement
+Développement d'applications
+Validation et test des services
+Service de gestion des actifs et de la configuration
+Gestion des connaissances
+
+## Service opérationnel
+
+Demande l'accomplissement
+Gestion d'événements
+Gestion des installations
+Contrôle des opérations informatiques
+Gestion des applications
+La gestion des incidents
+Gestion des accès
+Gestion des problèmes
+Gestion technique
+
+
+## Amélioration continue des services
+
+Revue de services
+Examen des services
+Évaluation du processus
+Définition des initiatives CSI
+Suivi des initiatives CSI
+
 # ISO 9126
 Pour l'évaluation de la qualité d'un logiciel
 
