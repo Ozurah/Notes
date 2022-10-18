@@ -19,6 +19,8 @@ Quand `h(s) = 0` la solution est trouvée
 
 # Distance de manahttan
 Déplacements horizontaux et verticaux
+![](Screen/2022-10-18-13-52-00.png)
+(en noir le chemin réel, en rouge le chemin de la distance de manhattan)
 
 # Meilleur d'abord
  - Glouton
@@ -30,7 +32,14 @@ Caractéristiques :
 - Optimal :
 
 # Qu'est-ce qu'une bonne heuristique ?
+![](Screen/2022-10-18-13-20-02.png)
+
 Admissible si $h(s) \leq h^*(s) \leq h*(n)$ <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// h*(n) = coût optimal réel de n au but</span> 
 
 ![](Screen/2022-10-04-14-30-54.png)
 h3 est **inadmissible**, car nous aurions **2** (case vide & case 1 sont mal placé), hors nous n'avons besoin que de **1** déplacement
+
+# A*
+C'est un algorithme de recherche basé sur l'historique et en utilisant cette heuristique : 
+![](Screen/2022-10-18-13-25-28.png) 
+Exemple pour le taquin : ![](Screen/2022-10-18-13-26-14.png)
