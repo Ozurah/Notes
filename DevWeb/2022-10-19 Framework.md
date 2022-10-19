@@ -3,6 +3,9 @@
 
 # Framework
 
+> "Application à trou" pour la base
+> on y ajoute le code pour les interactions
+
 - Fonctionnalités similaires pour de nombreuses applis
 - Composants de haut-niveau réutilisables (faible couplage)
 - Règles de codage et d’architecture
@@ -17,8 +20,7 @@
   - Contrôle du flux de l'application
     - en console, c'est nous qui décidons de l'ordre d'interaction
 	alors que en graphique, il y a l'inversion de contrôle : c'est le framework qui appel les fonctions nécessaires
-
-
+	
 <span style="color: red">Un framework n'est pas une librairie</span>
 
 1er réflexe : regarder si qqc dans le framework existe déjà (ou une extension) plutôt que de coder directement soi-même
