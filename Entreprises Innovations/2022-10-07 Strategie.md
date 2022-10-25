@@ -21,3 +21,7 @@ Valeurs
 
 ### Exemple Caritas
 ![](Screen/2022-10-07-09-20-01.png)
+
+# SWOT
+
+![](Screen/2022-10-21-08-26-34.png)

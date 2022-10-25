@@ -26,6 +26,18 @@ BiFunction<T1, T2, R> | apply; andThen|||(x,y) -> x^2 + y^2 <br>Si X et Y sont d
 Supplier\<T>| get | retourne un objet de type T | | |
 Comparator\<T> | sort | trier une collection | | |
 
+
+Méthode par défaut : se sont des méthodes supplémentaires des interfaces qui sont déjà implémentées de manière **universelles** dans les classes
+
+Interface | Méthodes par défaut
+---|---
+List | stream, parallelStream, forEach
+Comparator | reversed
+Predicate | negate, and, or
+Function | compose, andThen
+set | stream
+
+
 # Interface fonctionnel (qui ne sont <span style="color: red">pas</span> de programmation fonctionnel)
 Interface | Méthode | Action | Remarque
 ---|---|---|---|
@@ -39,6 +51,7 @@ Classe | Utilité | Exemples/Remarque
 ---|---|---
 Collectors | permet diverses opérations de réductions | https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collectors.html
 `Streams.stream(iterable)` | Stream sur un itérable | homemade du prof. <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// C'est très complexe à faire sinon</span> 
+
 ## Exemples Collectors
 
 ```java
@@ -53,6 +66,14 @@ Map<Department, List<Employee>> byDept
 // Compute sum of salaries of employee
     int total = employees.stream()
         .collect(Collectors.summingInt(Employee::getSalary)));
+
+// Autres méthodes
+Collectors.summingInt(mapper) // mapper == par exemple toIntFunction
+reducing(init, mapper, BinaryOperator)
+reducing(init, binaryOperator)
+Collectors.toList()
+Collectors.toSet()
+Collectors.toCollection(Supplier)
 ```
 
 

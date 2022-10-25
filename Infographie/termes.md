@@ -1,6 +1,7 @@
 # divers
 Vocabulaire importants : pages 316+
-Transformer une image en fonction des pixels : rasterisation ![](Top-left_triangle_rasterization_rule.gif) [source](https://en.wikipedia.org/wiki/Rasterisation)
+- discretiser des triangle en fonction des pixels : rasterisation
+![](Top-left_triangle_rasterization_rule.gif) [source](https://en.wikipedia.org/wiki/Rasterisation)
 
 <!-- #region IMPORTANT BLOCK --> 
 <div style="margin: 20px auto; padding: 10px; background-color: #ff8a8a; border-left: 5px solid #8a0000;color: black; font-size: 2em">

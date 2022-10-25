@@ -49,3 +49,6 @@ Executable | `target` | contient le .jar du projet; ce projet démarre son serve
 | --- | --- |
 Starters | Ensemble de dépendances (.jar) non executables qui permettent l'ajout de fonctionnalités
 ![](Screen/2022-09-27-11-56-38.png) | Le bouton n'est pas grisé : il y a plusieurs application qui tourne ! Il est plutôt conseillé de relancer l'application courrante avec ![](Screen/2022-09-27-11-57-30.png) plutôt avec la flèche verte
+
+# Rédploiement à chaud
+![](Screen/2022-10-25-11-16-10.png)

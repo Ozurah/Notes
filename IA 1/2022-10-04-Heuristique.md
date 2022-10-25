@@ -39,6 +39,9 @@ Admissible si $h(s) \leq h^*(s) \leq h*(n)$ <span style="color: #46b7ae; font-st
 ![](Screen/2022-10-04-14-30-54.png)
 h3 est **inadmissible**, car nous aurions **2** (case vide & case 1 sont mal placé), hors nous n'avons besoin que de **1** déplacement
 
+Si l'heuristique est admissible, on aura toujours le résultat optimal.
+Si l'heuristique = constante, alors F = G, et c'est djikstra
+
 # A*
 C'est un algorithme de recherche basé sur l'historique et en utilisant cette heuristique : 
 ![](Screen/2022-10-18-13-25-28.png) 
