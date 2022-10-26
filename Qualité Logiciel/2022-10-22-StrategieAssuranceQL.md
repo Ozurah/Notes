@@ -28,3 +28,16 @@ Il est important de définir les objectifs et les KPI (Key Performance Indicator
 
 <!-- #endregion IMPORTANT BLOCK -->
 
+
+# Qualification & formation continue
+
+![](Screen/2022-10-26-08-53-37.png)
+
+Niveaux ultimes :
+- Architecture : Etudie les nouvelles techno pour trouver les meilleurs pour le future
+- Senior expert : Hyper calé dans un domaine précis
+- Management : Encadrer d'autres personnes pour la matière
+
+# Quality gate
+Les étapes de la qualité :
+![](Screen/2022-10-26-08-58-02.png)
