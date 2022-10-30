@@ -82,6 +82,8 @@
 		},
 	],
 	"settings": {
+	    "git.enableSmartCommit": true,
+		"git.autofetch": true,
 		/*
 		"workbench.colorCustomizations": {
 			"activityBar.activeBackground": "#296438",
