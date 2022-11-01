@@ -138,6 +138,8 @@ return view('books.index', compact('books'))
     ->with('i', (request()->input('page', 1) - 1) * 5);
 ```
 
+> `with` permet de créer une variable qui viendra s'ajouter dans la session, et qui sera supprimer après la view
+> `with(clé, valeur)` ou `with([clé => valeur, clé2 => valeur2])`	
 
 ```html
 {!! $books->links() !!}
