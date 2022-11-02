@@ -6,6 +6,7 @@
     - la privée est gardée secrète
   - Signer un message avec la clé privée
   - Vérifier la signature avec la clé publique
+  - **Confidentialité** <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// Le plus important</span> 
 - Cryptographie symétrique
   - 1 seule clé de cryptage
   - Partage de la clé entre les membres
@@ -21,11 +22,11 @@
 
 ![](Screen/2022-10-26-11-12-27.png)
 
-key | Alice | Bob
----|---|---
-private | a | b
-public | $A = g^a \% p$ | $B = g^b \% p$
-linked | $S = B^a \% p = (g^b)^a \%p$ <span style="color: green;font-size:1.5em">$= g^{ab} \% p$</span> | $S = A^b \% p = (g^a)^b \%p$ <span style="color: green;font-size:1.5em">$= g^{ab} \% p$</span>
+| key     | Alice                                                                                          | Bob                                                                                            |
+| ------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| private | a                                                                                              | b                                                                                              |
+| public  | $A = g^a \% p$                                                                                 | $B = g^b \% p$                                                                                 |
+| linked  | $S = B^a \% p = (g^b)^a \%p$ <span style="color: green;font-size:1.5em">$= g^{ab} \% p$</span> | $S = A^b \% p = (g^a)^b \%p$ <span style="color: green;font-size:1.5em">$= g^{ab} \% p$</span> |
 
 Avec la clé publique, il n'est pas possible de trouvé la privée (exposant), à cause de la multitude de possibilités d'obtenir le même résultat.
 

@@ -46,7 +46,11 @@
 		},
 		{
 			"name": "Workshop Laravel",
-			"path": "workshop-laravel"
+			"path": "./DevWeb/workshop-laravel"
+		},
+		{
+			"name": "Workshop VueJS",
+			"path": "./DevWeb/workshop-vueJS"
 		},
 		{
 			"name": "Jeudi",

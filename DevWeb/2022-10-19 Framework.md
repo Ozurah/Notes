@@ -25,6 +25,13 @@
 
 1er réflexe : regarder si qqc dans le framework existe déjà (ou une extension) plutôt que de coder directement soi-même
 
+
+# Micro-framework
+on ne prend pas tout le framework, mais seulement les bibliothèques dont on a besoin.
+Exemple : python web :
+- Django : framework complet
+- Flask : micro-framework
+
 ## Couplage fort/faible
 Fort : peu réutilisable dans d'autres apps sans adapté
 Faible : facilement réutilisable

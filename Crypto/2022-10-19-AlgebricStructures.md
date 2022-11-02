@@ -18,10 +18,22 @@ toutes les valeurs entres 1 et P-1 sont obtenable par la partie multiplicative d
 Pour $GF(N)$, c'est un peu plus compliqué :
 - plus de complément dans l'exercice 1 du devoirs de la semaine 5
 
-# Identité de Bézout
+# Identité de Bézout : calculé l'inverse modulaire
+
+<!-- #region IMPORTANT BLOCK --> 
+<div style="margin: 20px auto; padding: 10px; background-color: #ff8a8a; border-left: 5px solid #8a0000;color: black; font-size: 2em">
+<span style="letter-spacing: -30px; margin-right:50px">❗❗</span>Important<br>
+<span style="font-size: 0.75em">
+Formule à se souvenir !
+</span></div>
+
+<!-- #endregion IMPORTANT BLOCK -->
+
+
+
 gcd(a,b) = d
 ax + by = d
-==> Si et uniquement si le GCD == 1, alors : 
+==> Si et uniquement si le GCD == 1, alors : <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// Coprime</span> 
 ax + by = 1
 ax % b = 1
 -> x est la multiplicative inverse de a modulo b
@@ -29,13 +41,27 @@ ax % b = 1
 $x \% b = a^{-1} \% b$
 
 
----
+**Résumé ** :
+Si : $ax + bx = gcd(a,b)$
+l'inverse est : $a^{-1} \% b = x \% b$
+
+- x, y et gcd sont déterminé par la formule
+- y nous est pas utile, on peut le remplacer par 1
+
+
+**Ssi le modulo est un nombre premier** :
+<span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// Plus rapide que la partie au dessus, mais moins générale</span> 
+
 $k^{p-1} * k \% p = 1 * k$
 -->
 $k^{p} \% p = k$
 $k^{p-1} \% p = 1$
 
 $k^{p-2} \% p = k^{-1} \% p$
+
+Autrement écrit : 
+$a^{-1} \% p = a^{p-2} \% p$
+$a * a^{p-2} \% p = 1$
 
 
 ---

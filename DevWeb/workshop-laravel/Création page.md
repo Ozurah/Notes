@@ -7,58 +7,60 @@ Créé l'architecture de base (avec composer)
 
 Démarrer le serveur
 
-![](0.png)
+![](Screen/0.png)
 
 `web.php` === le routeur
 
 # 1 Creation d'une 1ère page
 
 Création du controlleur via la commande `php artisan`
-![](1%20Creation%20controlleur.png)
+![](Screen/1%20Creation%20controlleur.png)
 
 Ce qui créé automatiquement le fichier au bon endroit
-![](1%20Creation%20controlleur%20fichier%20automatiquement%20creer.png)
+![](Screen/1%20Creation%20controlleur%20fichier%20automatiquement%20creer.png)
 
 (En cas d'erreur, juste supprimer le fichier))
 # 1-1
 
-![](1-1.png)
+![](Screen/1-1.png)
 
 # 1-2
-![](1-2%20Creation%20route.png)
+![](Screen/1-2%20Creation%20route.png)
 # 1-3
-![](1-3%20creation%20vue.png)
+![](Screen/1-3%20creation%20vue.png)
 
 Les vues ne sont pas crée via la cmd "artisan", il faut les créer manuellement
 # 1-fin
-![](1-4%20la%20vue%20fonctionne.png)
+![](Screen/1-4%20la%20vue%20fonctionne.png)
 
 # 3 Base de données
 
 # 3-0
-![](3-0.png)
+![](Screen/3-0.png)
 
 Création d'une entrée dans la base de donnée
 
 # 3-1
-![](3-1.png)
+![](Screen/3-1.png)
 
 Création de la migration (les données à mettre dans la BDD)
 Convention chez Laravel : objet "Book" aura une table "books" (minuscule avec un "s" à la fin)
 
 ce qui génère le fichier, précéder de la date (pour des question d'ordre d'execution)
 
+![](Screen/3-1b.png)
+
 # 3-2
 Rajouter quelques champs au livre dans la migration, au minimum : title, pages, quantity
 
 Note : l'ordre importe peu, c'est juste une convetion
 
-![](3-2.png)
+![](Screen/3-2.png)
 
 # 3-3
 Envoie des données vers la BDD (phpMyAdmin)
 
-![](3-3.png)
+![](Screen/3-3.png)
 (Il est possible de rollback avec une commande, mais lire la doc pour ;))
 
 
@@ -76,12 +78,12 @@ par convention un seeder permet de mettre les données de base. Donc par convent
 
 `use App\Models\Book;`
 
-![](3-5.png)
+![](Screen/3-5.png)
 
 
 # 3-6
  Envoie des données à la BDD
-![](3-6.png)
+![](Screen/3-6.png)
 
 `php artisan db:seed`
 
@@ -117,7 +119,7 @@ Pour simplifier on créé un layout, qui sera la structure générale
 
 permet de faire que cette partie sera remplacée par la vue appelant cette page
 
-![](4-5.png)
+![](Screen/4-5.png)
 
 # 6 Validation
 
