@@ -1,5 +1,10 @@
 > <span style="font-size: 1.5em">📖</span> <span style="color: orange; font-size: 1.3em;">Présentation `Algebric Structures`</span>
 
+# Nombre de racine primitives
+GF(N) = $\varphi(\varphi(N))$
+
+$\varphi(\varphi(n)) \rightarrow \varphi(\varphi(p)) = \varphi(p-1)$ 
+
 <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// P == Nombre premier</span> 
 
 
@@ -15,7 +20,7 @@ toutes les valeurs entres 1 et P-1 sont obtenable par la partie multiplicative d
   - On obtient tous les nombres sauf le 0
 - }
 
-Pour $GF(N)$, c'est un peu plus compliqué :
+Pour les valeurs de $GF(N)$, c'est un peu plus compliqué :
 - plus de complément dans l'exercice 1 du devoirs de la semaine 5
 
 # Identité de Bézout : calculé l'inverse modulaire
@@ -33,7 +38,7 @@ Formule à se souvenir !
 
 gcd(a,b) = d
 ax + by = d
-==> Si et uniquement si le GCD == 1, alors : <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// Coprime</span> 
+==> <span style="color: red">Si et uniquement si</span> le GCD == 1, alors : <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// Coprime</span> 
 ax + by = 1
 ax % b = 1
 -> x est la multiplicative inverse de a modulo b
@@ -41,7 +46,7 @@ ax % b = 1
 $x \% b = a^{-1} \% b$
 
 
-**Résumé ** :
+**Résumé** :
 Si : $ax + bx = gcd(a,b)$
 l'inverse est : $a^{-1} \% b = x \% b$
 
@@ -73,7 +78,3 @@ On sait que le résultat ne dépassera pas 2016
 on décompose l'exposant dans la forme d'euler :
 ![](Screen/2022-10-19-11-28-21.png)
 
-
-# Nombre de racine primitives
-
-$\varphi(\varphi(n)) \rightarrow \varphi(\varphi(p)) = \varphi(p-1)$ 
