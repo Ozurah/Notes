@@ -32,3 +32,4 @@ QC = Quality Control
     - Users Story : déscription d'une fonctionnalité
       - 1. `Rôle` ("en tant qu'utilisateur", "en tant que ...")
       - 2. `Done`, critères pour valider la fonctionnalités (80% tests, effectue ceci, etc.)
+    - Efficace pour des équipes de 5 à 7

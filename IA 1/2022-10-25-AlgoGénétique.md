@@ -26,6 +26,7 @@ Type de codage :
 ![](Screen/2022-10-25-14-01-35.png)
 ![](Screen/2022-10-25-14-02-37.png)
 
+> Explication de la sélection, mutation, croisement : https://kushalmukherjee.medium.com/a-brief-introduction-to-genetic-algorithm-and-its-use-in-feature-selection-using-deap-81c7e2a3d3b9#:~:text=results%20than%20others.-,Genetic%20operators,-In%20genetic%20algorithms
 # Sélections
 
 ![](Screen/2022-10-25-15-41-29.png)
@@ -42,3 +43,8 @@ Par convention c'est fitnesse max; mais la librairie `DEAP` que nous utiliserons
 
 # Croisements
 ![](Screen/2022-10-25-14-30-04.png)
+
+
+# ---
+
+anytime : fournis une solution à tout moment, même si c'est pas la meilleure (exemple on a une réponse après la 1ère itération)

@@ -1,3 +1,4 @@
+> On regarde que les bases, on est loins d'avoir tout `vue` (*/joke*)
 # Setup
 
 # Extension pour le navigateur
@@ -203,9 +204,13 @@ const app = Vue.createApp({
 
 # Composants
 
-on commence dans le main.js; mais par la suite se sera déplacé dans un `.vue`
+Faire un nouveau dossier "`components`" et créer un fichier `.js` dedans (`ProductDisplay.js`).
 
-1. on créé la structure de l'objet dans le **`main.js`**
+> Ne pas oublier de l'importer dans le `.html`
+>
+> on commence dans `.js`; mais par la suite se sera déplacé dans un fichier `.vue` spécifique
+
+1. on créé la structure de l'objet dans le **`ProductDisplay.js`**
 ```js
 app.component('product-display', {
     template:
@@ -224,8 +229,123 @@ app.component('product-display', {
   });
 ```
 
-2. on l'utilise dans le **`index.html`**
+1. on l'utilise dans le **`index.html`**
 ```html
 <product-display></product-display>
 ```
-      
+
+## Props
+Il s'agit des entrées (paramètres) pour les composants.
+
+Il faut ajouter au composant dans le `.js` l'entrée "`props`" (avant le template)
+
+```js
+app.component('product-display', {
+    props: {
+        premium: {
+            type: Boolean,
+            required: true // Entrée obligatoire ?
+            default: false // optionel, car le champs est indiqué comme obligatoire
+        }
+    },
+    template:
+    ...
+}
+```
+
+et pour utiliser (`.html`) :
+```html
+<product-display :premium="true"></product-display>
+```
+
+## Emitters
+Il s'agit des sorties (paramètres) pour les composants. Il est possible de connecter des events entre les composants.
+
+Il faut ajouter au composant dans le `.js` l'entrée "`emits`" (avant le template)
+
+```js
+app.component('product-display', {
+    props: {
+        uuid: {
+            type: String,
+            required: true
+        }
+    }
+    emits: ['add-to-cart'], // C'est un tableau ici
+    template:
+    ...
+});
+```
+
+déclanché un event dans le composant :
+```js
+methods: {
+    addToCart () {
+        this.$emit("add-to-cart") // avec un $
+    },
+}
+```
+> La convention est le `kebab-case`
+
+et pour utiliser (`.html`) :
+```html
+<product-display :props... @add-to-cart="updateCart"></product-display>
+```
+> updateCart est la méthode spécifiée dans le `main.js`, VueJS sait que c'est dans l'objet `app`, car notre composant est créé dans la div `app`
+> ```html 
+> <div id="app">
+> ...
+>   <product-display :uid="0" :premium="true" @add-to-cart="updateCart"></product-display>
+> </div>
+> ```
+>
+> Si on met les parenthèses à la méthode `@add-to-cart="updateCart()"`, on spécifie que la méthode doit avoir cette signature.
+> Sans, c'est une référence de méthode (vue qui s'occupe de match la bonne méthode)
+
+Et on récupère les données dans `main.js` :
+```js
+    methods: {
+        updateCart(uid) {
+            this.cart.push(uid);
+        }
+    },
+```
+
+# V-Models
+
+Permet de liés un champs à une variable, exemple pour créé un formulaire.
+> Le lien fonctionne dans les deux sens :
+> - modifier la variable modifie le champs
+> - modifier le champs modifie la variable
+
+On ajoute un nouveau composant `ReviewForm.js`
+
+et dans le code du template html de ce formulaire, on ajoute les `v-models` :
+```html
+<form @submit.prevent="onSubmit">
+    <input v-model="name" id="name" class="form-control">
+    <textarea v-model="review" id="review" class="form-control"></textarea>
+</form>
+```
+> le `@submit.prevent=onSubmit` du form permet d'éviter de rafréchire la page, et d'appeler la méthode `onSubmit`
+
+ici, les v-model pointes vers les variables `name` et `review` du composant.
+
+pour valider le formulaire, on ajoute un event
+```js
+    emits: ['review-submitted'],
+    ...,
+    methods: {
+        onSubmit() {
+            let productReview = {
+                name: this.name,
+                review: this.review,
+                rating: this.rating
+            } // On groupe chaque valeur en 1 objet
+            this.$emit('review-submitted', productReview)
+        }
+    },
+```
+
+
+
