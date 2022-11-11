@@ -2,6 +2,11 @@
 > https://docs.oracle.com/javase/7/docs/api/index.html?java/util/concurrent/locks/ReadWriteLock.html
 > </span>
 
+
+Passage de :
+- Rédacteur -> Lecteur : <span style="color: green">Possible</span> 
+- Lecteur à rédacteur : <span style="color: red">Non possible</span> 
+
 #  ReadWriteLock
 https://docs.oracle.com/javase/7/docs/api/index.html?java/util/concurrent/locks/ReadWriteLock.html
 
@@ -32,6 +37,8 @@ Il faut ajouter une variable représentant de nombre d’attente de rédacteurs 
 
 # StampedLock
 
-Autre type de LecteurRedacteur, mais avec une optimisation comparé au précédent
+Autre type de LecteurRedacteur, mais avec une optimisation comparé au précédent.
 
-
+- Sans : Chaque fois qu'on fait un lock, on mobilise les ressources. Chaque fois qu'un code est vérouillé, on perd en performence (Goulot d'étranglement).
+- Avec : Permet de réduire ce goulot d'étranglement.
+  - Comment : on a un jeton quand on accède à la ressource, et quand on rend le jeton, une vérification est faite s'il y a eu une modification. En cas de modification, la modifie. Et s'il y a modification, les lecteurs sont informés comme quoi la données est peut être fausse.

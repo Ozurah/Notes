@@ -23,3 +23,12 @@ mais c'est les **données** (partages, collectes, analyses, etc)
 ## enjeux
 
 ![](Screen/2022-10-28-11-26-15.png)
+
+# Business model canvas
+
+![](Screen/2022-11-11-11-21-12.png)
+
+Exemple pour nespresso aux slides 64-80
+
+
+Pour les ressources clés, il faut pour une startup compté quelque millions (au moins 3) avant d'avoir du bénéfice
