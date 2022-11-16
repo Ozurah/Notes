@@ -2,7 +2,7 @@ Les streams précédemment étudiée servait pour les données.
 Maintenant nous allons voir les streams pour les indices.
 
 # Contexte
-Pour faire du parralelissme, ce qui dure long c'est les boucles !
+Pour faire du parralelisme, ce qui dure long c'est les boucles !
 
 ```java
 for (int i = 1; i < 1000000000; i++) {
