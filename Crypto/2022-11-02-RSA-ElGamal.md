@@ -82,3 +82,10 @@ Slides 27+, on les a juste survolé en 5 min
 </span></div>
 
 <!-- #endregion NOTE BLOCK -->
+
+![](Screen/2022-11-16-10-24-12.png)
+
+> G : Galois field
+> g : n'importe quel `g` est ok pour le cours; mais si g est racine primitive c'est mieux
+
+Inconvéniant, le cypher text est composé de 2 nombres

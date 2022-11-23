@@ -51,3 +51,11 @@ Type :
 
 ### Exemple Type 2 (celui qu'on fait habituellement)
 ![](Screen/2022-11-10-10-21-18.png)
+
+### Exemple Type 3
+![](Screen/2022-11-17-09-12-09.png)
+![](Screen/2022-11-17-09-13-00.png)
+![](Screen/2022-11-17-09-13-14.png)
+
+# Automates à état finis (Grammaire de type 3)
+![](Screen/2022-11-17-09-14-25.png)

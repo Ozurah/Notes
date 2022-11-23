@@ -26,3 +26,13 @@ Change and configuration management :
   - <span style="color: red">Ne pas faire le changement sans ça</span>
   - Protocoler la séance (Procès verbal décisionnel)
     - Si sur wiki gitlab, ajouter une mention `"en cas de non requête dans les 2 semaines après publication du PV, elle est considérée comme acceptée"`
+
+
+
+> <span style="font-size: 1.5em">📖</span> <span style="color: orange; font-size: 1.3em;">Présentation `Chapitre 06 - Planification des tests`</span>
+
+![](Screen/2022-11-16-09-04-11.png)
+
+- **Efficacité** : On a des résultats à la fin
+- **Efficiance** : Qu'utilise-t-on pour être efficace
+- **Suitability** : Test adapté au contexte
