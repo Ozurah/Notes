@@ -14,7 +14,7 @@ toutes les valeurs entres 1 et P-1 sont obtenable par la partie multiplicative d
   - $3^1 \% 7 = 3$
   - $3^2 \% 7 = 2$ 
   - $3^3 \% 7 = 6$ <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// (2 * 3) % 7 = 6 // on prend la valeur précédente, et on multiplie par 3</span> 
-  - $3^4 \% 7 = 4$ <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// (6 * 3) % 7 = 6</span> 
+  - $3^4 \% 7 = 4$ <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// (6 * 3) % 7 = 4</span> 
   - $3^5 \% 7 = 5$ <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// (4 * 3) % 7 = 5</span> 
   - $3^6 \% 7 = 1$
   - On obtient tous les nombres sauf le 0
