@@ -36,3 +36,21 @@ Change and configuration management :
 - **Efficacité** : On a des résultats à la fin
 - **Efficiance** : Qu'utilise-t-on pour être efficace
 - **Suitability** : Test adapté au contexte
+
+
+<!-- #region NOTE BLOCK --> 
+<div style="margin: 20px auto; padding: 10px; background-color: #ffd48a; border-left: 5px solid #8a5700;color: black; font-size: 2em">
+<span> 📑 </span>Note<br>
+<span style="font-size: 0.75em">
+Slides 29+ juste vu de manière rapide (pas dans les détails -> pas pour le quizz)
+</span></div>
+
+<!-- #endregion NOTE BLOCK -->
+
+
+![](Screen/2022-11-30-09-14-12.png)
+
+Les critères sont :
+- Les données de tests, exemples
+  - Blackbox :  fichiers d'entrées / sortie attendue
+  - Tests unitaires : in = arguments, out = valeur de retour, stacktrace d'échec, etc

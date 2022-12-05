@@ -58,4 +58,58 @@ Type :
 ![](Screen/2022-11-17-09-13-14.png)
 
 # Automates à état finis (Grammaire de type 3)
+
 ![](Screen/2022-11-17-09-14-25.png)
+
+## Automates à état finis non déterministe
+NFA = Non Deterministic Finite Automata
+
+![](Screen/2022-12-01-08-42-04.png)
+
+### Exemple
+![](Screen/2022-12-01-08-43-27.png)
+
+## Automates à état finis déterministe
+DFA = Deterministic Finite Automata
+![](Screen/2022-12-01-08-44-43.png)
+
+## NFA -> DFA
+![](Screen/2022-12-01-08-45-34.png)
+
+![](Screen/2022-12-01-08-46-06.png)
+
+<!-- #region NOTE BLOCK --> 
+<div style="margin: 20px auto; padding: 10px; background-color: #ffd48a; border-left: 5px solid #8a5700;color: black; font-size: 2em">
+<span> 📑 </span>Note<br>
+<span style="font-size: 0.75em">
+Le déroulement des étapes est montré visuellement dans les slides 68-73
+</span></div>
+
+<!-- #endregion NOTE BLOCK -->
+
+## Expressions régulières
+
+### types pour les regex
+De "mathématiquements", les regex ne sont pas vraiment des expressions régulières, mais elles se bases sur la théorie des expressions régulières.
+![](Screen/2022-12-01-09-11-42.png)
+> Il y a une erreur avec le schéma : les regex couvrent TOUT le type 3, en plus d'une partie du type 2
+> palindrome : exemple : SUGUS, KAYAK, etc.
+
+## Conclusion 
+![](Screen/2022-12-01-09-22-44.png)
+
+# Grammaire non contextuelles (type 2+3)
+> slides 82+
+
+![](Screen/2022-12-01-09-33-32.png)
+
+![](Screen/2022-12-01-09-35-52.png)
+
+![](Screen/2022-12-01-09-36-12.png)
+> On constate qu'on a pas la priorité des opérations -->
+> Deux arbres de dérivations différentes pour le même mot ==> **<span style="color: red">Grammaire ambiguüe</span>** 
+
+![](Screen/2022-12-01-09-38-51.png)
+> Rappel : 
+> - Analyse décendante : LL
+> - Analyse ascendante : LR
