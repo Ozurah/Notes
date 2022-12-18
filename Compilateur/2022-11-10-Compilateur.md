@@ -105,11 +105,34 @@ De "mathématiquements", les regex ne sont pas vraiment des expressions réguli�
 
 ![](Screen/2022-12-01-09-35-52.png)
 
+**Limites des langages réguliers de type 3**
+Ne gère pas les couples de parenthèses imbriquées
+On peut détecter des suites de a,b mais pas <span style="color: red">mémoriser le nombre de a et de b.</span> 
+Il est donc nécessaire de passer par une grammaire non contextuelle de type 2.
+
 ![](Screen/2022-12-01-09-36-12.png)
 > On constate qu'on a pas la priorité des opérations -->
 > Deux arbres de dérivations différentes pour le même mot ==> **<span style="color: red">Grammaire ambiguüe</span>** 
 
 ![](Screen/2022-12-01-09-38-51.png)
 > Rappel : 
-> - Analyse décendante : LL
-> - Analyse ascendante : LR
+> - Analyse décendante : LL : utilise le plus à droite pour construire la pile
+> - Analyse ascendante : LR : utilise le plus à gauche pour construire la pile
+>
+> `LL`❗ y a récursion infinie si on a par exemple la règle `E => E + E` => non possible, il faudrais utiliser `LR` qui permet la récursion
+
+## Automate à pile
+
+### Variables d'un automate à pile non déterministe
+Pushdown automata (PDA)
+![](Screen/2022-12-08-09-06-53.png)
+
+### Transitions : b, x->y
+- ![](Screen/2022-12-08-09-03-56.png)
+
+Exemple :
+![](Screen/2022-12-08-09-04-52.png)
+Par convention, on met un `$` au début et à la fin, comme ça on sait quand on a fini de lire le symbole d'entré "vide".
+![](Screen/2022-12-08-09-09-00.png)
+
+

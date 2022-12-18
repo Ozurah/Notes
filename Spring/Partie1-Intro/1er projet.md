@@ -34,6 +34,13 @@ dans le controlleur :
 <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// Pour rendre le paramètre optionnel, il faut spécifié le PathVariable comme l'étant</span> 
 <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// Le nom de variable doit être identique au placeholder !</span> 
 
+Pour une route POST (et un objet) :
+```java
+	@PostMapping(value = "/hello3")
+	public @ResponseBody String helloWorld3(@ModelAttribute MonObjet obj) {
+		// ... action sur obj
+	}
+```
 
 
 

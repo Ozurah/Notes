@@ -74,7 +74,7 @@ puppeteer:
 
 Jusqu'à maintenant, nous avons vu les `Transformations ponctuelles` et les `Transformations locales`.
 ![](Screen/2022-12-04-20-36-27.png)
-~~> Dans ce chapitre, nous allons voir les `Transformations globales` qui sont des `Transformée de Fourier`
+~~> Dans ce chapitre, nous allons voir les `Transformations globales` qui sont des `Transformée de Fourier`. Nous avons donc besoin de tous les pixels de l'image.
 
 ## Terminologie
 
@@ -84,13 +84,23 @@ Terme | Définition
 **Hautes fréquences** | Changements intensité rapides
 **Domaine spatial** | L'image
 **Domaine fréquentiel** | Le spectre
+**Phase** | Décalage de la sinusoïde sur l'axe X
+**Spectre** | Ensemble des fréquences présentes dans l'image, mise sous forme d'un graphe à barre
 
+Fréquence, spectre :
+![](Screen/TP_fig-24.svg)
 
 > par la suite, ces termes sont indiqués de cette manière : <ref>exemple</ref>
 
 ## Formules
 Série de Fourier temporelle 1D
 ![](Screen/2022-12-04-20-44-55.png)
+
+Formule | Paramètres
+--|--
+$f = 1/P$ | $f$ : fréquence, $P$ : période
+
+$f$ est exprimé en `pixel` ou `mm` <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// Normalement nous avons des `Hz` ($m/s$), mais pour une image nous n'avons pas le temps</span> 
 
 ## Symboles
 Symboles | Correspond à
@@ -116,6 +126,8 @@ Un **signal périodique** peut être décomposé en une **somme de sinus**.
 >
 > Pour la compréhension des formules, voir la slide 13
 
+![](Screen/2022-12-05-13-41-16.png)
+
 Celle qui nous interesse est la transformée de Fouris discrète (DFT)
 ![](Screen/2022-12-04-20-50-37.png)
 
@@ -124,7 +136,7 @@ Celle qui nous interesse est la transformée de Fouris discrète (DFT)
 
 Domaine fréquentiel : **Spectre**, **Phase**
 
-la composante continue corresponds aux flèches des valeurs du spectre ou de la phase.
+La composante continue correspond à la flèche à la fréquence "fx = 0, fy = 0". Sa valeur est le niveau de gris moyen de l'image.
 Les zones de basses fréquences sont proches de l'origine.
 Les zones de hautes fréquences sont loin de l'origine.
 
@@ -132,6 +144,7 @@ Les zones de hautes fréquences sont loin de l'origine.
 
 Relation entre plan spatial et fréquentiel :
 ![](Screen/2022-12-04-22-25-03.png)
+- La plus petite période vaut 2. La plus grande est la taille de l'image / 2.
 
 
 # Transformée de Fourier discrète (DFT)
@@ -149,6 +162,8 @@ La composante continue est au centre du spectre.
 ![](Screen/2022-12-04-23-01-24.png)
 
 ## Fenêtre de Hanning
+
+2 points siginifie qu'on a 1 sinusoïde. 1 ligne signifie qu'il y a plusieurs sinusoïdes.
 ![](Screen/2022-12-04-23-03-16.png)
 ![](Screen/2022-12-04-23-03-30.png)
 
