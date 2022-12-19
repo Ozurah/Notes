@@ -100,13 +100,13 @@ Nous on fait du type 2
 - automate d'état fini
 - regex (lexical) (exemple lire une plaque de voiture)
 
-> non-terminal -> terminal non-terminal
+> non-terminal -> terminal avec non-terminal
 non-terminal -> terminal
 
 ## grammaire type 2
 - automate d'état à pile
 - (syntaxique) (permet exemple de faire des opérations
->non-terminal -> répétitions de terminal non-terminal
+>non-terminal -> répétitions de terminal avec non-terminal
 non-terminal -> terminal
 
 ## grammaire type 1
