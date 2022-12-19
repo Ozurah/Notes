@@ -55,6 +55,7 @@ Shift and reduce (analyse ascendant), qui est un "LR"
 Texte analysé : 1 + 2
 
 Règles : 
+    P -> E OP E
     E -> NB
     OP -> + | -
     NB -> 0 | 1 | ... | 9
