@@ -141,7 +141,7 @@ Pour l'évaluation de la qualité d'un logiciel
 ## Caractéristiques d'un logiciel de qualité
 
 ![](Screen/2022-10-05-09-37-15.png)
-les rectangles de couleur sont la source : interne; externe, outils
+les rectangles de couleur sont la source : interne; externe, utilisateurs
 
 # Quel norme/standard choisir ?
 ![](Screen/2022-10-05-09-40-30.png)
