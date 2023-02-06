@@ -10,7 +10,7 @@ Sites web non destiné à des utilisateurs, mais destiné à d'autres programmes
 
 
 # SOAP
-SOAP n'est plus un acronyme, et son nom est devenu générique pour désigner les services web (`WB-*`)
+SOAP n'est plus un acronyme, et son nom est devenu générique pour désigner les services web (`WS-*`)
 - `*` : SOAP, WSDL, UDDI (et d'autres)
 ![](Screen/2022-12-21-13-05-19.png)
 
