@@ -1,10 +1,6 @@
 {
 	"folders": [
 		{
-			"name": "Devoirs",
-			"path": "./Devoirs"
-		},
-		{
 			"name": "Lundi",
 			"path": "NA-Lundi"
 		},
@@ -25,12 +21,61 @@
 			"path": "./Spring"
 		},
 		{
-			"name": "Intelligence Articielle 1",
-			"path": "./IA 1"
-		},
-		{
 			"name": "Mercredi",
 			"path": "NA-Mercredi"
+		},
+		{
+			"name": "Paradigme programmation avancée",
+			"path": "Paradigme Prog"
+		},
+		{
+			"name": "Développement Web 1",
+			"path": "./DevWeb"
+		},
+/*		{
+			"name": "Workshop Laravel",
+			"path": "./DevWeb/workshop-laravel"
+		},
+		{
+			"name": "Workshop VueJS",
+			"path": "./DevWeb/workshop-vueJS"
+		},*/
+		{
+			"name": "Jeudi",
+			"path": "NA-Jeudi"
+		},
+		{
+			"name": "Unity - Infographie",
+			"path": "Unity"
+		},
+		{
+			"name": "Sécurité informatique",
+			"path": "Sécurité Informatique"
+		},
+		{
+			"name": "Vendredi",
+			"path": "NA-Vendredi"
+		},
+		{
+			"name": "Industrialisation logicielle",
+			"path": "Industrialisation logicielle"
+		},
+		{
+			"name": "Intelligence Articielle 2",
+			"path": "IA 2"
+		},
+		{
+			"name": "Dév. Mobile",
+			"path": "Mobile"
+		},
+
+		{
+			"name": "TERMINER",
+			"path": "NA"
+		},
+		{
+			"name": "Intelligence Articielle 1",
+			"path": "./IA 1"
 		},
 		{
 			"name": "Qualité logiciel",
@@ -41,36 +86,8 @@
 			"path": "./Crypto"
 		},
 		{
-			"name": "Développement Web 1",
-			"path": "./DevWeb"
-		},
-		{
-			"name": "Workshop Laravel",
-			"path": "./DevWeb/workshop-laravel"
-		},
-		{
-			"name": "Workshop VueJS",
-			"path": "./DevWeb/workshop-vueJS"
-		},
-		{
-			"name": "Jeudi",
-			"path": "NA-Jeudi"
-		},
-		{
 			"name": "Compilateur",
 			"path": "./Compilateur"
-		},
-		{
-			"name": "Dév. Mobile",
-			"path": "Mobile"
-		},
-		{
-			"name": "Paradigme programmation avancée",
-			"path": "Paradigme Prog"
-		},
-		{
-			"name": "Vendredi",
-			"path": "NA-Vendredi"
 		},
 		{
 			"name": "Entreprises et Innovations",
