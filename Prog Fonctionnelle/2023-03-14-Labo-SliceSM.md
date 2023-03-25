@@ -5,7 +5,8 @@
 Très rapide, mais on en a très peux (48ko)
 
 - Chaque thread partage la même instance de la mémoire partagée.
-- On a donc pas 1 instance par "MP", mais par block
+- On a donc pas 1 ins
+- tance par "MP", mais par block
   - <span style="color: #46b7ae; font-style: italic; font-size: 0.85rem">// Rappel : grid -> block -> thread</span> 
 
 Il faut donc faire gaffe à ne pas la surcharger.
@@ -41,6 +42,9 @@ __global__ void k()
 __host__ void use()
 {
     // Dans le host, on choisi la taille du `tabSM` (en octets (nombre de porte à notre "armoire")
+    // n = nombre de cases dans le tableau
+    // Actuellement n = nombre de thread par block (uniquement pour de la réduction)
+    // n doit être une puissance de 2
     size_t sizeSM = n * sizeof(float);
 
     k <<<dg, db, sizeSM>>>();
@@ -124,6 +128,10 @@ dg( , , 1)
 db( , , 1)
 ```
 
+!!! note ID d'un thread
+    `tidLocal` == `tidLocalBlock` == `tidBlock`
+    (pour correspondre en fonction du support)
+
 ## Contraintes :
 dg :
 - satisfaire heuristique 1 (H1)
@@ -139,3 +147,4 @@ H2 :
   - `[#nbThreadBlock]` == 64, 128, 256, 512, 1024
   - Le produit des 3 chiffres de db doivent donnée un des nombres ci-dessus
   Exemple : `db(64,1,1)`, `db(128,1,1)`, `db(32,2,1)`, `db(1024, 1, 1)`, `db(2, 512, 1)`
+
