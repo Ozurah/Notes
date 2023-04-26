@@ -15,3 +15,8 @@ En prog parallèle CUDA, il n'y a pas de tableau 2D --> tout est en 1D rowmajor
 ## Exercice Rippling
 `/opt/cbi/doc/cuda/01_TP/01_Preparer_100/02_cuda_image`
 ![](Screen/2023-01-10-10-28-22.png)
+
+
+## Rappel
+Pour vérifier si le GPU du serveur est down : `nvidia-smi`
+Sa va intéroger le driver nvidia et afficher les infos du GPU, s'il ne le trouve pas, il va afficher un message d'erreur (et donc que le GPU est down)
